@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import NotFoundView from "../views/NotFoundView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,6 +12,10 @@ const routes: Array<RouteRecordRaw> = [
     path: "/cat-detail/:id",
     name: "cat-detail",
     component: () => import("../views/CatDetailView.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    component: NotFoundView,
   },
 ];
 
