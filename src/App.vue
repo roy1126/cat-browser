@@ -1,8 +1,8 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <router-link to="/cat-detail">Cat Detail</router-link>
+  </nav> -->
   <router-view />
 </template>
 
@@ -26,5 +26,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.card-body {
+  padding: 0 !important;
+}
+.loading {
+  margin: 20px;
+  width: 100%;
 }
 </style>
